@@ -1,0 +1,193 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  /* general variables */
+  --boxShadow: 0 0 5px rgb(250, 234, 230);
+  --transition: all 0.5 linear;
+
+  /* variables for this project */
+  --Dark-Blue: hsl(213, 19%, 18%);
+  --light-blue: hsl(213, 19%, 23%);
+  --Light-Grey: hsl(217, 12%, 63%);
+  --Medium-Grey: hsl(216, 12%, 54%);
+  --primarycol: hsl(25, 97%, 53%);
+  --Very-Dark-Blue: hsl(216, 12%, 8%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  display: grid;
+  font-family: "Overpass", "Open Sans", Arial, Helvetica, sans-serif;
+  height: 100vh;
+  margin: 0;
+  place-items: center;
+}
+
+main {
+  background-color: var(--Very-Dark-Blue);
+  display: grid;
+  height: 90vh;
+  place-items: center;
+  position: relative;
+  width: 100vw;
+}
+
+/* ratings section styles */
+.rating-container,
+.thank-you-card {
+  background-color: var(--Dark-Blue);
+  border-radius: 20px;
+  color: white;
+  height: 450px;
+  /* margin: 20px auto; */
+  padding: 30px;
+  width: 375px;
+}
+
+img {
+  background-color: var(--light-blue);
+  border-radius: 50%;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 1.6rem;
+  margin: 20px 0;
+}
+
+p {
+  color: var(--Light-Grey);
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 30px 0;
+}
+
+.btns {
+  background-color: var(--light-blue);
+  border-radius: 50%;
+  border: none;
+  color: var(--Light-Grey);
+  font-size: 15px;
+  outline: none;
+  padding: 15px 20px;
+}
+
+.submit-btn {
+  background-color: var(--primarycol);
+  border-radius: 30px;
+  border: none;
+  color: var(--White);
+  font-size: large;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  outline: none;
+  padding: 20px;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+.submit-btn:hover {
+  background-color: white;
+  color: var(--primarycol);
+  cursor: pointer;
+}
+
+.btns:hover {
+  background-color: var(--primarycol);
+  color: white;
+  cursor: pointer;
+}
+
+/* Thanks you section styles */
+.thank-you-section {
+  width: 100%;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  visibility: hidden;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  color: var(--primarycol);
+  cursor: pointer;
+  margin: 5px;
+  outline: none;
+  padding: 10px;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.thank-you-card {
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+
+.thank-you-card p:first-of-type {
+  background-color: var(--light-blue);
+  border-radius: 20px;
+  color: var(--primarycol);
+  padding: 5px 20px;
+}
+
+.thank-you-card p:last-of-type {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.thank-you-card h1 {
+  margin-bottom: 0;
+}
+
+.thank-you-card img {
+  margin: 20px 0;
+}
+
+/* javascript section */
+.show-thank-you-card {
+  visibility: visible;
+  z-index: 2;
+}
+
+.hide-rating-container {
+  visibility: hidden;
+}
+
+.ratings {
+  background-color: var(--Medium-Grey);
+  color: white;
+}
+
+/* media queries */
+@media screen and (max-width: 380px) {
+  .rating-container,
+  .thank-you-card {
+    width: 315px;
+  }
+}
+
+/* footer styles */
+.attribution {
+  background-color: hsl(228, 59%, 16%);
+  color: white;
+  font-size: 12px;
+  padding: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.attribution a {
+  color: hsl(51, 79%, 45%);
+  text-decoration: none;
+}
