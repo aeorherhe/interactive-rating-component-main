@@ -28,7 +28,7 @@ body {
 main {
   background-color: var(--Very-Dark-Blue);
   display: grid;
-  height: 90vh;
+  height: 95vh;
   place-items: center;
   position: relative;
   width: 100vw;
@@ -41,7 +41,6 @@ main {
   border-radius: 20px;
   color: white;
   height: 450px;
-  /* margin: 20px auto; */
   padding: 30px;
   width: 375px;
 }
@@ -181,10 +180,11 @@ p {
 .attribution {
   background-color: hsl(228, 59%, 16%);
   color: white;
-  font-size: 12px;
+  font-size: 14px;
   padding: 10px;
   text-align: center;
   width: 100%;
+  height: 5vh;
 }
 
 .attribution a {
